@@ -438,12 +438,14 @@ import OpenAI from 'openai';
 import './VoiceAssistant.css'; // Import CSS for styling
 
 const VoiceAssistant: React.FC = () => {
+    require('dotenv').config();
+
     const [conversation, setConversation] = useState<{ role: string, text: string }[]>([]);
     const [listening, setListening] = useState<boolean>(false);
     const [recognition, setRecognition] = useState<any>(null); // Store recognition instance
 
     const openai = new OpenAI({
-        apiKey: "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",
+        apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
         dangerouslyAllowBrowser: true
     });
 

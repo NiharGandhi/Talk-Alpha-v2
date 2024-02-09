@@ -16,6 +16,7 @@
     "@mui/material": "^5.15.7",
     "@mui/styled-engine-sc": "^6.0.0-alpha.15",
     "axios": "^1.6.7",
+    "dotenv": "^16.4.1",
     "next": "14.1.0",
     "openai": "^4.26.1",
     "react": "^17.0.0 || ^18.0.0",
